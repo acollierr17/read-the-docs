@@ -1,0 +1,46 @@
+{
+  "name": "read-the-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/lib/index.js",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "nodemon src/index.ts --name=$npm_config_name",
+    "start": "yarn run build && node dist/lib/index.js --name=$npm_config_name",
+    "build": "rimraf dist && tsc",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint --fix ./src --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdcavedevelopment/read-the-docs.git"
+  },
+  "keywords": [],
+  "author": "acollierr17 <gamemaniac101@gmail.com>",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/nerdcavedevelopment/read-the-docs/issues"
+  },
+  "homepage": "https://github.com/nerdcavedevelopment/read-the-docs#readme",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^14.11.2",
+    "@types/ws": "^7.2.6",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  }
+}
