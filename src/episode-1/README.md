@@ -6,5 +6,8 @@ How we will achieve this:
 * [x] Get a [text channel](https://discord.js.org/#/docs/main/stable/class/TextChannel) from the [guild channels collection](https://discord.js.org/#/docs/main/stable/class/GuildChannelManager) that new messages will be sent in  
 * [x] [Send](https://discord.js.org/#/docs/main/stable/class/TextChannel?scrollTo=send) a new [embedded](https://discord.js.org/#/docs/main/stable/class/MessageEmbed) message to the channel when a role mention is detected  
 
+## Watch the video
+You can find the video for this episode [here](https://www.youtube.com/watch?v=Zge8ipoVqh0)!
+
 ## Bonus
 Currently, role notifications are being sent even if the role was mentioned in the role notifications channel itself. I don't want this functionality to happen. If you want to fix this, please, fork this repo and create a new PR! This applies to the `/src/episode-1/index.ts` file.
