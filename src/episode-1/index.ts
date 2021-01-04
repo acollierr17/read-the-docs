@@ -13,7 +13,7 @@ export const main = async (): Promise<void> => {
   client.on('message', message => {
     const NOTIFY_ROLE = '759524331574394931';
     const NOTIFY_CHANNEL = message.guild.channels.cache.get('759525014994157598') as TextChannel;
-
+    if (message.channel.id === '759525014994157598') return;
     if (message.mentions.roles.has(NOTIFY_ROLE) && message.channel.type === 'text') {
       const embed = new MessageEmbed()
         .addField('Content', message.content)
