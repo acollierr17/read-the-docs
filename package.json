@@ -29,7 +29,7 @@
   "homepage": "https://github.com/nerdcavedevelopment/read-the-docs#readme",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.3.1",
+    "discord.js": "^13.0.0",
     "dotenv": "^8.2.0",
     "minimist": "^1.2.5"
   },
